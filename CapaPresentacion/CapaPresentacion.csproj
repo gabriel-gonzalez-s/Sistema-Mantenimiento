@@ -1,0 +1,254 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F74582A3-8A30-4CA7-981D-32A79E2CFE64}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CapaPresentacion</RootNamespace>
+    <AssemblyName>CapaPresentacion</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="SplitButton">
+      <HintPath>..\..\..\SplitButton\bin\Release\SplitButton.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FrmAcceso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAcceso.Designer.cs">
+      <DependentUpon>FrmAcceso.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAgregarInstrumento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAgregarInstrumento.Designer.cs">
+      <DependentUpon>FrmAgregarInstrumento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmBajaIndividualizacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBajaIndividualizacion.Designer.cs">
+      <DependentUpon>FrmBajaIndividualizacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCalibracion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCalibracion.Designer.cs">
+      <DependentUpon>FrmCalibracion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmEmpleado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmEmpleado.Designer.cs">
+      <DependentUpon>FrmEmpleado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmIndividualizacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmIndividualizacion.Designer.cs">
+      <DependentUpon>FrmIndividualizacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmInstrumentosPrecision.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmInstrumentosPrecision.Designer.cs">
+      <DependentUpon>FrmInstrumentosPrecision.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmItemsComprobacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmItemsComprobacion.Designer.cs">
+      <DependentUpon>FrmItemsComprobacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmItemsInstrumento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmItemsInstrumento.Designer.cs">
+      <DependentUpon>FrmItemsInstrumento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Funciones.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Visuales.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CapaNegocios\CapaNegocios.csproj">
+      <Project>{f3f643c1-fce2-4d41-847a-aa6a40a4a548}</Project>
+      <Name>CapaNegocios</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="FrmAcceso.resx">
+      <DependentUpon>FrmAcceso.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAgregarInstrumento.resx">
+      <DependentUpon>FrmAgregarInstrumento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmBajaIndividualizacion.resx">
+      <DependentUpon>FrmBajaIndividualizacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCalibracion.resx">
+      <DependentUpon>FrmCalibracion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmEmpleado.resx">
+      <DependentUpon>FrmEmpleado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmIndividualizacion.resx">
+      <DependentUpon>FrmIndividualizacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmInstrumentosPrecision.resx">
+      <DependentUpon>FrmInstrumentosPrecision.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmItemsComprobacion.resx">
+      <DependentUpon>FrmItemsComprobacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmItemsInstrumento.resx">
+      <DependentUpon>FrmItemsInstrumento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bnt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BtnDfto.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BtnDfto1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\forward-ltr.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\forward-rtl.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Adelante.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Atras.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\forwardltr.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\forwardrtl.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\foldersearch.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\foldersearchico.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BntVerde.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AdelateG.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AtrasG.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\goldforward.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\goldrewind.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Lupa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Lupa2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lupa3.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LupaP1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LupaP2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\docu_delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\printer.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
